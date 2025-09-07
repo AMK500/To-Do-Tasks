@@ -60,6 +60,7 @@ form button {
   cursor: pointer;
   flex-shrink: 0;
   height: 40px;
+  transition: all 0.3s;
 }
 
 button:hover {
@@ -82,10 +83,19 @@ li {
   gap: 0.5rem;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 li span {
   pointer-events: none;
+  font-weight: 700;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+li.checked {
+  background: #e4ffe4;
+  border: 1px solid #4cae4c;
 }
 
 li.checked span {
@@ -117,6 +127,7 @@ li .delete-btn {
   text-align: center;
   line-height: 32px;
   font-size: 1.2rem;
+  transition: all 0.3s;
 }
 
 li .delete-btn:hover {
