@@ -23,24 +23,42 @@
         <button type="submit">Add Task</button>
       </form>
 
-      <ul id="taskList">
-        <!-- <li>
-          <span>Task 1</span>
-          <button class="delete-btn">✕</button>
-        </li>
-        <li>
-          <span>Task 2</span>
-          <button class="delete-btn">✕</button>
-        </li>
-        <li>
-          <span>Task 3</span>
-          <button class="delete-btn">✕</button>
-        </li>
-        <li>
-          <span>Task 4</span>
-          <button class="delete-btn">✕</button>
-        </li> -->
-      </ul>
+      <div class="history-controls">
+        <button id="undoBtn" disabled>
+          <svg
+            width="16"
+            height="15"
+            viewBox="0 0 16 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 15V13H10.1C11.15 13 12.0625 12.6667 12.8375 12C13.6125 11.3333 14 10.5 14 9.5C14 8.5 13.6125 7.66667 12.8375 7C12.0625 6.33333 11.15 6 10.1 6H3.8L6.4 8.6L5 10L0 5L5 0L6.4 1.4L3.8 4H10.1C11.7167 4 13.1042 4.525 14.2625 5.575C15.4208 6.625 16 7.93333 16 9.5C16 11.0667 15.4208 12.375 14.2625 13.425C13.1042 14.475 11.7167 15 10.1 15H3Z"
+              fill="white"
+            />
+          </svg>
+
+          <!-- <span>Undo</span> -->
+        </button>
+
+        <button id="redoBtn" disabled>
+          <!-- <span>Redo</span> -->
+
+          <svg
+            width="16"
+            height="15"
+            viewBox="0 0 16 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.9 15C4.28333 15 2.89583 14.475 1.7375 13.425C0.579167 12.375 0 11.0667 0 9.5C0 7.93333 0.579167 6.625 1.7375 5.575C2.89583 4.525 4.28333 4 5.9 4H12.2L9.6 1.4L11 0L16 5L11 10L9.6 8.6L12.2 6H5.9C4.85 6 3.9375 6.33333 3.1625 7C2.3875 7.66667 2 8.5 2 9.5C2 10.5 2.3875 11.3333 3.1625 12C3.9375 12.6667 4.85 13 5.9 13H13V15H5.9Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul id="taskList"></ul>
     </div>
 
     <script src="./js/app.js"></script>
